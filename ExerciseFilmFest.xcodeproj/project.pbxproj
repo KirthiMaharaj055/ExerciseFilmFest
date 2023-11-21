@@ -16,6 +16,9 @@
 		76C7F9242B064E9A007AF614 /* ExerciseFilmFestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7F9232B064E9A007AF614 /* ExerciseFilmFestTests.swift */; };
 		76C7F92E2B064E9A007AF614 /* ExerciseFilmFestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7F92D2B064E9A007AF614 /* ExerciseFilmFestUITests.swift */; };
 		76C7F9302B064E9A007AF614 /* ExerciseFilmFestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7F92F2B064E9A007AF614 /* ExerciseFilmFestUITestsLaunchTests.swift */; };
+		76C7F93D2B0655D5007AF614 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7F93C2B0655D5007AF614 /* Movie.swift */; };
+		76C7F9402B0CB930007AF614 /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7F93F2B0CB930007AF614 /* MovieManagerTests.swift */; };
+		76C7F9432B0CC01A007AF614 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7F9422B0CC01A007AF614 /* MovieManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		76C7F9292B064E9A007AF614 /* ExerciseFilmFestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExerciseFilmFestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C7F92D2B064E9A007AF614 /* ExerciseFilmFestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFilmFestUITests.swift; sourceTree = "<group>"; };
 		76C7F92F2B064E9A007AF614 /* ExerciseFilmFestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFilmFestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76C7F93C2B0655D5007AF614 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		76C7F93F2B0CB930007AF614 /* MovieManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
+		76C7F9422B0CC01A007AF614 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		76C7F90B2B064E98007AF614 /* ExerciseFilmFest */ = {
 			isa = PBXGroup;
 			children = (
+				76C7F9412B0CBFDB007AF614 /* Model */,
 				76C7F90C2B064E98007AF614 /* AppDelegate.swift */,
 				76C7F90E2B064E98007AF614 /* SceneDelegate.swift */,
 				76C7F9102B064E98007AF614 /* ViewController.swift */,
@@ -113,7 +120,9 @@
 		76C7F9222B064E9A007AF614 /* ExerciseFilmFestTests */ = {
 			isa = PBXGroup;
 			children = (
+				76C7F93E2B0CB8D0007AF614 /* TestControllers */,
 				76C7F9232B064E9A007AF614 /* ExerciseFilmFestTests.swift */,
+				76C7F93F2B0CB930007AF614 /* MovieManagerTests.swift */,
 			);
 			path = ExerciseFilmFestTests;
 			sourceTree = "<group>";
@@ -125,6 +134,22 @@
 				76C7F92F2B064E9A007AF614 /* ExerciseFilmFestUITestsLaunchTests.swift */,
 			);
 			path = ExerciseFilmFestUITests;
+			sourceTree = "<group>";
+		};
+		76C7F93E2B0CB8D0007AF614 /* TestControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestControllers;
+			sourceTree = "<group>";
+		};
+		76C7F9412B0CBFDB007AF614 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76C7F93C2B0655D5007AF614 /* Movie.swift */,
+				76C7F9422B0CC01A007AF614 /* MovieManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +285,8 @@
 			files = (
 				76C7F9112B064E98007AF614 /* ViewController.swift in Sources */,
 				76C7F90D2B064E98007AF614 /* AppDelegate.swift in Sources */,
+				76C7F9432B0CC01A007AF614 /* MovieManager.swift in Sources */,
+				76C7F93D2B0655D5007AF614 /* Movie.swift in Sources */,
 				76C7F90F2B064E98007AF614 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C7F9402B0CB930007AF614 /* MovieManagerTests.swift in Sources */,
 				76C7F9242B064E9A007AF614 /* ExerciseFilmFestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

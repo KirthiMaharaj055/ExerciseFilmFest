@@ -25,6 +25,18 @@ final class ExerciseFilmFestTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
+    
+    func testInit_MovieWithTitle(){
+        let testmovie = Movie(title: "Generic Blockbuster")
+        XCTAssertNotNil(testmovie)
+        XCTAssertEqual(testmovie.title, "Generic Blockbuster")
+    }
+    
+    func testInit_SetMovieTitleAndReleaseDate(){
+        let testMovie = Movie(title: "Comedy", releaseDate: "1995")
+        XCTAssertNotNil(testMovie)
+        XCTAssertEqual(testMovie.releaseDate, "1995")
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
