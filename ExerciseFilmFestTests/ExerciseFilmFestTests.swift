@@ -26,6 +26,8 @@ final class ExerciseFilmFestTests: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
     
+    
+    // MARK: Initialization
     func testInit_MovieWithTitle(){
         let testmovie = Movie(title: "Generic Blockbuster")
         XCTAssertNotNil(testmovie)
@@ -37,12 +39,30 @@ final class ExerciseFilmFestTests: XCTestCase {
         XCTAssertNotNil(testMovie)
         XCTAssertEqual(testMovie.releaseDate, "1995")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    
+  // MARK: Equatable
+    func testEquatable_RerurnsTrue(){
+        let actionMovie1 = Movie(title: "Action")
+        let actionMovie2 = Movie(title: "Action")
+        
+        XCTAssertEqual(actionMovie1, actionMovie2)
     }
+    
+    func testEquatable_ReturnNotEqualForDifferentTitles(){
+        let actionMovie1 = Movie(title: "Action")
+        let actionMovie2 = Movie(title: "Adventure")
+        
+        XCTAssertNotEqual(actionMovie1, actionMovie2)
+    }
+    
+    func testEquatable_ReturnNotEqualForDifferentReleaseDates(){
+        let actionMovie1 = Movie(title: "Action", releaseDate: "1978")
+        let actionMovie2 = Movie(title: "Adventure", releaseDate: "1988")
+        
+        XCTAssertNotEqual(actionMovie1, actionMovie2)
+    }
+    
+    // MARK: 
 
 }
