@@ -66,7 +66,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dataSource" destination="aSe-qx-uSi" id="ZL6-7i-ZDH"/>
+                        <outlet property="dataService" destination="aSe-qx-uSi" id="ZL6-7i-ZDH"/>
                         <outlet property="libraryTableView" destination="jy2-Oj-x0k" id="Rlm-hS-bFx"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="aY2-fU-fvs"/>
                     </connections>
